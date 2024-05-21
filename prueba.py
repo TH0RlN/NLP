@@ -1,4 +1,3 @@
-import sys
 from nltk import CFG
 from nltk.parse.generate import generate
 from random import choice
@@ -22,6 +21,4 @@ parser = generate(grammar, depth=5)
 phrases = []
 for sentence in parser:
     phrases.append(' '.join(sentence))
-
-for 
 print(choice(phrases))
