@@ -93,3 +93,10 @@ Es una estructura formal utilizada en lingüística y en informática para defin
 ### Nuestro ejemplo
 
 Hemos aprovechado las capacidades de las cfg para crear un pequeño generador de frases motivacionales aleatorias.
+
+Uso:
+
+```bash
+pip install nltk
+python motivator.py
+```
