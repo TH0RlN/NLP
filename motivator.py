@@ -6,7 +6,11 @@ from random import choice
 def main():
     depth = 0
     if len(argv) == 2:
-        depth = int(argv[1])
+        try:
+            depth = int(argv[1])
+        except ValueError:
+            print("Error: 'depth' must be an integer")
+            exit(1)
     elif len(argv) == 1:
         depth = 5
     else:
@@ -27,7 +31,7 @@ def main():
         PP -> P NP
         P -> "in" | "through" | "with"
     """)
-    
+
     parser = generate(grammar, depth=depth)
     phrases = []
     for sentence in parser:
